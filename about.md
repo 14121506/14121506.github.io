@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: A blog abot me
 permalink: /about/
 ---
 
-Some information about you!
+Yeah not much to say, really. Anyways, why are you busy reading about my life and my hobbys?
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Hey! I’m Varun. I love Harry Potter and the Percy Jackson series of books, (including the Heroes of Olympus). I obviously like reading, playing on my xbox one s and generally on some form of tech. I also love unbox therapy, unlisted leaf, dude perfect and UrAvgConumer as they are the best youtubers of all times. So yeah. :)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[1412varun@gmail.com]
