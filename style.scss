@@ -29,9 +29,11 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
-  border-radius: 25px;
-  background: linear-gradient ( to bottom right, #f9f9f9, #1bf7f0);
-}
+  background:rgba(11, 12, 16, 0.9);
+	border-radius: 25px;
+    padding: 5px; 
+	border-bottom: 1px solid white;
+	 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
