@@ -24,15 +24,12 @@ body {
   
 }
 
-.container {
+.container:before {
   background: rgba(128,128,128,0.6);
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  margin: 100px auto 0;
-  max-width: 400px;
-  min-height: 300px;
-  padding: 200px;
-  position: relative;
-  width: 80%;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
 	 }
 
 h1, h2, h3, h4, h5, h6 {
