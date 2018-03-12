@@ -31,7 +31,7 @@
 </div>
 
 <!-- Script pointing to search-script.js -->
-<script src="https://comput3rz.github.io/js/search-script.js" type="text/javascript"></script>
+<script src="https://14121506.github.io/js/search-script.js" type="text/javascript"></script>
 
 <!-- Configuration -->
 <script>
@@ -39,6 +39,6 @@ SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   searchResultTemplate: '<div><a href="{url}"><h1>{title}</h1></a><h2 class="searchresults">{date}</span></h2>',
-  json: 'https://comput3rz.github.io/search.json'
+  json: 'https://14121506.github.io/search.json'
 })
 </script>
