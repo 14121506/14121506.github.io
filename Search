@@ -1,51 +1,25 @@
----
-layout: null
-title: Search
-permalink: /search
----
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+[searchBar setPlaceholder:@"Search in Plaza Lapiazza, Jakarta Raya, Indonesia"];
 
-<style>
-  input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 4px solid #ff1c2e;
-    border-radius: 6px;
-    background-color: #f6f8f5;
-    color: #000;
-  }
-  
-  input::placeholder {
-    font-size: 15px;
-  }
-  
-  input:focus {
-    border: 3px solid #555;
-  }
-  
-  h2.searchresults{
-    color: #b5b9bf; 
-  }
-</style>
+//to remove searchbar default background layer
+if ([[[searchBar subviews] objectAtIndex:0] isKindOfClass:[UIImageViewclass]]){
+[[[searchBar subviews] objectAtIndex:0] removeFromSuperview];
+}
 
+//to remove search icon. Note that objectAtIndex = 0 because background layer is already removed
+UITextField *textField;
+if ([[[searchBar subviews] objectAtIndex:0] isKindOfClass:[UITextFieldclass]]){
+textField = [[searchBarsubviews] objectAtIndex:0];
+}
+textField.leftView = nil;
 
-<!-- Html Elements for Search -->
-<div id="search-container">
-<input type="text" id="search-input" placeholder="&#128270; type to search...">
-<ul id="results-container"></ul>
-</div>
+//to change textField frame
+UIImage *searchBarImage = [[UIImage imageNamed:@"search_bar_fit.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 10, 0, 10)];
+[textField setBackground:searchBarImage];
 
-<!-- Script pointing to search-script.js -->
-<script src="https://14121506.github.io/js/search-script.js" type="text/javascript"></script>
+//to change textfield font and size
+[textField setFont:[UIFontfontWithName:@"HelveticaNeue-Light" size:15]];\
 
-<!-- Configuration -->
-<script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('results-container'),
-  searchResultTemplate: '<div><a href="{url}"><h1>{title}</h1></a><h2 class="searchresults">{date}</span></h2>',
-  json: 'https://14121506.github.io/search.json'
-})
-</script>
+//to add transparent background on searchbar
+[searchBar setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"search_bottom.png"]]];
+[[searchBar layer] setOpaque:NO];
