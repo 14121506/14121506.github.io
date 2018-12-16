@@ -3,7 +3,8 @@ layout: page
 title: A blog about me
 permalink: /about/
 ---
-Hey! I’m Varun. I love Harry Potter and the Percy Jackson series of books, (including the Heroes of Olympus). I obviously like reading, playing on my Xbox One S and generally on some form of tech. I also love Unbox Therapy, Unlisted Leaf, Dude Perfect, UrAvgConsumer, Austin Evans, Dave 2D, Jonathon Morrison and Marques Brownlee,  as they are the best youtubers of all times. So yeah. :)
+Hey! I’m Varun. I love Harry Potter and the Percy Jackson series of books, (including the Heroes of Olympus). I obviously like reading, playing on my Xbox One S and generally on some form of tech. I also love to code a robot arm!:)
+PS:It was on FUZE.
 ### More Information
 
 
